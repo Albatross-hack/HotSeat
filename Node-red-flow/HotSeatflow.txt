@@ -1,0 +1,1324 @@
+[
+    {
+        "id": "4b08a6070e4d52fc",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6bad8bb6.70a5d4",
+        "type": "tab",
+        "label": "Set ESP8266 Interval",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "572a4fbb.49dd48",
+        "type": "tab",
+        "label": "Historical Chart",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "f982837f0c93aebe",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "72692f8c.1a55a",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "77bda0c.5155c6",
+        "type": "ui_group",
+        "name": "Change ESP8266 Reporting Interval",
+        "tab": "1a6939e5.65966e",
+        "order": 1,
+        "disp": true,
+        "width": "10",
+        "collapse": false
+    },
+    {
+        "id": "1a6939e5.65966e",
+        "type": "ui_tab",
+        "name": "ESP8266 Interval",
+        "icon": "dashboard",
+        "order": 4
+    },
+    {
+        "id": "022d782f1774d43f",
+        "type": "mongodb-aleph-config",
+        "hostname": "cluster0.s9mhdeg.mongodb.net",
+        "topology": "dnscluster",
+        "connectOptions": "",
+        "port": "27017",
+        "db": "hotseat",
+        "name": ""
+    },
+    {
+        "id": "3c3fb13.ddcbc4e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "255b40a9.5bd09",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "77e810ca.af734",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "6d77e5a8.188d4c",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "77e810ca.af734",
+        "type": "ui_tab",
+        "name": "Tab 2",
+        "icon": "dashboard",
+        "order": 2
+    },
+    {
+        "id": "277379c9.ca83a6",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "6a71a459e9092533",
+        "type": "ui_group",
+        "name": "Z-AXIS",
+        "tab": "7a8514bf75f8bb13",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c9187d66c3b99d19",
+        "type": "ui_group",
+        "name": "X-AXIS ACCELERATION",
+        "tab": "5736cae9.f98874",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "31b2f86b9e18b1bf",
+        "type": "ui_group",
+        "name": "Y-AXIS ACCELERATION",
+        "tab": "5736cae9.f98874",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "cdaee5a1552bc622",
+        "type": "ui_group",
+        "name": "Z-AXIS ACCELERATION",
+        "tab": "5736cae9.f98874",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "895685059660d05a",
+        "type": "ui_group",
+        "name": "X-AXIS",
+        "tab": "7a8514bf75f8bb13",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a29a2ba8fc256010",
+        "type": "ui_group",
+        "name": "Y-AXIS",
+        "tab": "7a8514bf75f8bb13",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "7a8514bf75f8bb13",
+        "type": "ui_tab",
+        "name": "SENSE IT DASHBOARD(LINECHART)",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5736cae9.f98874",
+        "type": "ui_tab",
+        "name": "SENSE IT DASHBOARD(GAUGE)",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5571671c.8ea9b",
+        "type": "ui_group",
+        "name": "Historical Data",
+        "tab": "1f3fcf14.3e0841",
+        "order": 1,
+        "disp": true,
+        "width": "18"
+    },
+    {
+        "id": "11d8514.a44dcaf",
+        "type": "ui_group",
+        "name": "Chart Controls",
+        "tab": "1f3fcf14.3e0841",
+        "order": 2,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "1f3fcf14.3e0841",
+        "type": "ui_tab",
+        "name": "Historical Data",
+        "icon": "fa-area-chart",
+        "order": 5
+    },
+    {
+        "id": "1153ee5f.3a519a",
+        "type": "ui_group",
+        "name": "Start / Stop",
+        "tab": "df1d3372.200e",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "1a0a58d82683400c",
+        "type": "mqtt in",
+        "z": "4b08a6070e4d52fc",
+        "name": "",
+        "topic": "espnode/evt/button/fmt/json",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "f982837f0c93aebe",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 300,
+        "wires": [
+            [
+                "36fcd5d61ff611cb",
+                "339e289d665f28be",
+                "44aa5b2ab91d274c",
+                "7c71cb29cca9cf0b"
+            ]
+        ]
+    },
+    {
+        "id": "36fcd5d61ff611cb",
+        "type": "debug",
+        "z": "4b08a6070e4d52fc",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 120,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "339e289d665f28be",
+        "type": "change",
+        "z": "4b08a6070e4d52fc",
+        "name": "Board2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.d.BOARD2",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 220,
+        "wires": [
+            [
+                "1e18479dee23aebf",
+                "4f0269100a718c8e"
+            ]
+        ]
+    },
+    {
+        "id": "1e18479dee23aebf",
+        "type": "debug",
+        "z": "4b08a6070e4d52fc",
+        "name": "Seat1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "44aa5b2ab91d274c",
+        "type": "change",
+        "z": "4b08a6070e4d52fc",
+        "name": "Board3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.d.BOARD3",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 380,
+        "wires": [
+            [
+                "7033757fe6db3407",
+                "038d68d2dc233b23"
+            ]
+        ]
+    },
+    {
+        "id": "7033757fe6db3407",
+        "type": "debug",
+        "z": "4b08a6070e4d52fc",
+        "name": "Seat2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "4f0269100a718c8e",
+        "type": "mqtt out",
+        "z": "4b08a6070e4d52fc",
+        "name": "",
+        "topic": "hotseat/iotseat/board2",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f982837f0c93aebe",
+        "x": 180,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "038d68d2dc233b23",
+        "type": "mqtt out",
+        "z": "4b08a6070e4d52fc",
+        "name": "",
+        "topic": "hotseat/iotseat/board3",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f982837f0c93aebe",
+        "x": 180,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "7c71cb29cca9cf0b",
+        "type": "function",
+        "z": "4b08a6070e4d52fc",
+        "name": "input_1 + input_2",
+        "func": "msg.payload = msg.payload.d.BOARD2 + msg.payload.d.BOARD3\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 200,
+        "wires": [
+            [
+                "d210ce1e4dbfafa2",
+                "daed5d4d7d53dc6b",
+                "13f53a0577b02f81"
+            ]
+        ]
+    },
+    {
+        "id": "d210ce1e4dbfafa2",
+        "type": "debug",
+        "z": "4b08a6070e4d52fc",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "4e94c74f727aef28",
+        "type": "mongodb-aleph-out",
+        "z": "4b08a6070e4d52fc",
+        "mongodb": "022d782f1774d43f",
+        "name": "",
+        "collection": "boarddata",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "insert",
+        "x": 990,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "daed5d4d7d53dc6b",
+        "type": "function",
+        "z": "4b08a6070e4d52fc",
+        "name": "Trigger Alarm",
+        "func": "var payload=msg.payload;\nvar alarm_flag=context.get(\"alarm_flag\");\nif(typeof alarm_flag==\"undefined\")\nalarm_flag=false;\n\nif (payload==2 && !alarm_flag)\n{\n    alarm_flag=true;\n    msg.alarm=1;\n    context.set(\"alarm_flag\",alarm_flag);\n    return msg;\n}\nif (payload<2 && alarm_flag)\n{\n    alarm_flag=false;\n    msg.alarm=0;\n    context.set(\"alarm_flag\",alarm_flag);\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 340,
+        "wires": [
+            [
+                "92597a11105cc823"
+            ]
+        ]
+    },
+    {
+        "id": "92597a11105cc823",
+        "type": "function",
+        "z": "4b08a6070e4d52fc",
+        "name": "",
+        "func": "if (msg.alarm) {\nvar seat=msg.payload;\n\n\nvar d =new Date();\nvar message=\"\";\n    msg.topic=\"All Seats Occupied\";\n    message=\" Seat number= \";  \nmsg.payload=\"time:\"+d+message +msg.payload;\nreturn msg;}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 340,
+        "wires": [
+            [
+                "9a78284f927d500d"
+            ]
+        ]
+    },
+    {
+        "id": "9a78284f927d500d",
+        "type": "ui_toast",
+        "z": "4b08a6070e4d52fc",
+        "position": "top right",
+        "displayTime": "4",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1030,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "13f53a0577b02f81",
+        "type": "function",
+        "z": "4b08a6070e4d52fc",
+        "name": "Format Time Series DB record",
+        "func": "msg.payload = {\n        time:     new Date().getTime(),\n        seat:     msg.payload,\n    } ;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 220,
+        "wires": [
+            [
+                "4e94c74f727aef28",
+                "8b54333f1bf8eefa"
+            ]
+        ]
+    },
+    {
+        "id": "8b54333f1bf8eefa",
+        "type": "debug",
+        "z": "4b08a6070e4d52fc",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 1190,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e5ab460d.1ebe28",
+        "type": "ui_form",
+        "z": "6bad8bb6.70a5d4",
+        "name": "Dashboard Form",
+        "label": "",
+        "group": "77bda0c.5155c6",
+        "order": 0,
+        "width": "10",
+        "height": "6",
+        "options": [
+            {
+                "label": "Reporting Interval (seconds)",
+                "value": "Seconds",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Seconds": ""
+        },
+        "payload": "",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "topic": "",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "",
+        "x": 170,
+        "y": 120,
+        "wires": [
+            [
+                "4a4e49ab.059b8"
+            ]
+        ]
+    },
+    {
+        "id": "4a4e49ab.059b8",
+        "type": "switch",
+        "z": "6bad8bb6.70a5d4",
+        "name": "Secs >= 0",
+        "property": "payload.Seconds",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 340,
+        "y": 120,
+        "wires": [
+            [
+                "6cb3e759.d0d3e"
+            ]
+        ]
+    },
+    {
+        "id": "ff0e210a.d5634",
+        "type": "debug",
+        "z": "6bad8bb6.70a5d4",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 90,
+        "wires": []
+    },
+    {
+        "id": "df4ffabd.cc7a1",
+        "type": "mqtt out",
+        "z": "6bad8bb6.70a5d4",
+        "name": "",
+        "topic": "espnode/cmd/display/fmt/json",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f982837f0c93aebe",
+        "x": 750,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "6cb3e759.d0d3e",
+        "type": "change",
+        "z": "6bad8bb6.70a5d4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "msg.payload.Seconds",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 120,
+        "wires": [
+            [
+                "ff0e210a.d5634",
+                "df4ffabd.cc7a1",
+                "598840a00a15e90b"
+            ]
+        ]
+    },
+    {
+        "id": "598840a00a15e90b",
+        "type": "mongodb-aleph-out",
+        "z": "6bad8bb6.70a5d4",
+        "mongodb": "022d782f1774d43f",
+        "name": "",
+        "collection": "interval",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "insert",
+        "x": 670,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3404583efefea879",
+        "type": "mqtt in",
+        "z": "6bad8bb6.70a5d4",
+        "name": "",
+        "topic": "espnode/cmd/display/fmt/json",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "f982837f0c93aebe",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 300,
+        "wires": [
+            [
+                "598840a00a15e90b"
+            ]
+        ]
+    },
+    {
+        "id": "a599cb1ce963a949",
+        "type": "mongodb-aleph-in",
+        "z": "6bad8bb6.70a5d4",
+        "mongodb": "022d782f1774d43f",
+        "name": "",
+        "collection": "interval",
+        "operation": "find",
+        "x": 350,
+        "y": 500,
+        "wires": [
+            [
+                "7d619ade12c2b465"
+            ]
+        ]
+    },
+    {
+        "id": "e608270a672c3cd8",
+        "type": "inject",
+        "z": "6bad8bb6.70a5d4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 420,
+        "wires": [
+            [
+                "a599cb1ce963a949"
+            ]
+        ]
+    },
+    {
+        "id": "7d619ade12c2b465",
+        "type": "function",
+        "z": "6bad8bb6.70a5d4",
+        "name": "Change into interval",
+        "func": "var i = msg.payload.length;\nmsg.payload=msg.payload[i-1].payload;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 400,
+        "wires": [
+            [
+                "7b7d0e25fef4b1f4",
+                "35f8000296dc9449"
+            ]
+        ]
+    },
+    {
+        "id": "7b7d0e25fef4b1f4",
+        "type": "debug",
+        "z": "6bad8bb6.70a5d4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "35f8000296dc9449",
+        "type": "mqtt out",
+        "z": "6bad8bb6.70a5d4",
+        "name": "",
+        "topic": "espnode/cmd/display/fmt/json",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f982837f0c93aebe",
+        "x": 790,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "958dd94a.779118",
+        "type": "debug",
+        "z": "572a4fbb.49dd48",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "false",
+        "x": 910,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "fe0204d0.c3dad8",
+        "type": "ui_chart",
+        "z": "572a4fbb.49dd48",
+        "name": "",
+        "group": "5571671c.8ea9b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "HotSeat Historian Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "10",
+        "removeOlderPoints": "5000",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a291ea3c.dcfa08",
+        "type": "debug",
+        "z": "572a4fbb.49dd48",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "false",
+        "x": 590,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "9e5cf2f1.9769b",
+        "type": "ui_button",
+        "z": "572a4fbb.49dd48",
+        "name": "",
+        "group": "11d8514.a44dcaf",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Load Seat Occupancy data History",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 160,
+        "y": 60,
+        "wires": [
+            [
+                "fbba543bfad8995a"
+            ]
+        ]
+    },
+    {
+        "id": "2b6d09cc.7b7406",
+        "type": "change",
+        "z": "572a4fbb.49dd48",
+        "name": "Query Payload",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"query\":\"OrderId:'1801'\",\"limit\":100}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 440,
+        "wires": [
+            [
+                "3dc34eca34d5a3d5"
+            ]
+        ]
+    },
+    {
+        "id": "56012a.b24426d8",
+        "type": "inject",
+        "z": "572a4fbb.49dd48",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 440,
+        "wires": [
+            [
+                "2b6d09cc.7b7406"
+            ]
+        ]
+    },
+    {
+        "id": "ff2f490.74aef38",
+        "type": "ui_date_picker",
+        "z": "572a4fbb.49dd48",
+        "name": "",
+        "label": "Start Date",
+        "group": "11d8514.a44dcaf",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "",
+        "x": 390,
+        "y": 200,
+        "wires": [
+            [
+                "9c32e685.0ca7e8"
+            ]
+        ]
+    },
+    {
+        "id": "88032976.91902",
+        "type": "ui_date_picker",
+        "z": "572a4fbb.49dd48",
+        "name": "",
+        "label": "End Date",
+        "group": "11d8514.a44dcaf",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "",
+        "x": 390,
+        "y": 240,
+        "wires": [
+            [
+                "716de554.1cb37c"
+            ]
+        ]
+    },
+    {
+        "id": "2191d8b4.1dac78",
+        "type": "debug",
+        "z": "572a4fbb.49dd48",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "false",
+        "x": 780,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "5b678ae7.552f5c",
+        "type": "debug",
+        "z": "572a4fbb.49dd48",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "false",
+        "x": 780,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "f3cab755.d3d0b8",
+        "type": "change",
+        "z": "572a4fbb.49dd48",
+        "name": "Start Date",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1451624400000",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 230,
+        "y": 200,
+        "wires": [
+            [
+                "ff2f490.74aef38"
+            ]
+        ]
+    },
+    {
+        "id": "48e2f858.675d9",
+        "type": "change",
+        "z": "572a4fbb.49dd48",
+        "name": "End Date",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1577750401000",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 230,
+        "y": 240,
+        "wires": [
+            [
+                "88032976.91902"
+            ]
+        ]
+    },
+    {
+        "id": "9c32e685.0ca7e8",
+        "type": "change",
+        "z": "572a4fbb.49dd48",
+        "name": "Start Time Range",
+        "rules": [
+            {
+                "t": "set",
+                "p": "start-time",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 200,
+        "wires": [
+            [
+                "2191d8b4.1dac78"
+            ]
+        ]
+    },
+    {
+        "id": "716de554.1cb37c",
+        "type": "change",
+        "z": "572a4fbb.49dd48",
+        "name": "End Time Range",
+        "rules": [
+            {
+                "t": "set",
+                "p": "end-time",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 240,
+        "wires": [
+            [
+                "5b678ae7.552f5c"
+            ]
+        ]
+    },
+    {
+        "id": "c56984b2.15922",
+        "type": "inject",
+        "z": "572a4fbb.49dd48",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 90,
+        "y": 220,
+        "wires": [
+            [
+                "48e2f858.675d9",
+                "f3cab755.d3d0b8"
+            ]
+        ]
+    },
+    {
+        "id": "fbba543bfad8995a",
+        "type": "mongodb-aleph-in",
+        "z": "572a4fbb.49dd48",
+        "mongodb": "022d782f1774d43f",
+        "name": "",
+        "collection": "boarddata",
+        "operation": "find",
+        "x": 270,
+        "y": 120,
+        "wires": [
+            [
+                "a291ea3c.dcfa08",
+                "4c9ed6b433ab32a8"
+            ]
+        ]
+    },
+    {
+        "id": "3dc34eca34d5a3d5",
+        "type": "mongodb-aleph-in",
+        "z": "572a4fbb.49dd48",
+        "mongodb": "022d782f1774d43f",
+        "name": "",
+        "collection": "boarddata",
+        "operation": "find",
+        "x": 690,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4c9ed6b433ab32a8",
+        "type": "function",
+        "z": "572a4fbb.49dd48",
+        "name": "Create a Chart Array for Chart.js",
+        "func": "\nvar starttime = flow.get(\"start-time\");\nvar endtime = flow.get(\"end-time\");\n\nif( msg.payload.length === 0 ) {\n\n    msg.payload = [] ;\n    return msg;\n}\n\n// The Array has this structure, inserting the first element as a template.\nvar ChartData = [ {\"series\":[\"Data\"],\n                   \"data\":[[{\"x\":msg.payload[0].payload.time,\"y\":msg.payload[0].payload.seat}]],\n                   \"labels\":[\"Data\"]}];\n\n// Start at 1 because we've already added element 0 in the initial array definition\nfor( var i=1; i < msg.payload.length; i++ ) {\n    if( (msg.payload[i].payload.time >= starttime) && (msg.payload[i].payload.time <= endtime) ) {\n        // This occupancy seat reading is within the Date Range\n        ChartData[0].data[0].push( { \"x\":msg.payload[i].payload.time,\"y\":msg.payload[i].payload.seat } );\n    }    \n}\n// Now we need to sort on the time so that we give the Chart node an array in time order\nChartData[0].data[0].sort(function sortNumber(a,b) { return a.x - b.x; });\n\nmsg.payload = ChartData;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 60,
+        "wires": [
+            [
+                "fe0204d0.c3dad8",
+                "958dd94a.779118"
+            ]
+        ]
+    }
+]
